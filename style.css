@@ -1,0 +1,437 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-container{
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+}
+.head-top-container{
+    width: 100%;
+    height: 190px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(242, 236, 236);
+}
+/* Navbar top section start */
+.input-search{
+    display: none;
+}
+.head-top-sub-container{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+}
+.head-top-sub-container>div{
+    border: 1px solid white;
+    display: flex;
+}
+.head-top-left{
+    flex-grow: 2;
+    align-items: center;
+}
+.head-top-center{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.head-top-right{
+    flex-grow: 1;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.head-top-center>button{
+    border-style: none;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: large;
+    background-color: white;
+}
+.head-top-right>button{
+    border-style: none;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.head-top-right .profile{
+    height: 35px
+}
+.head-top-right .profile-menu{
+    border-radius: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 100px;
+    border: 1px solid rgb(219, 211, 211);
+}
+.experi{
+    color: rgb(162, 140, 140);
+}
+.experi:hover{
+    background-color: rgb(245, 239, 239);
+    color: black;
+}
+.head-top-right button:hover{
+    background-color: rgb(245, 239, 239);
+    color: black;
+}
+.head-top-right .profile-menu:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 5px 0px rgb(213, 206, 206);
+}
+.stay:hover{
+    background-color: white;
+}
+
+/* Navbar top section end */
+
+/* Navbar search section start */
+
+.head-down-center,.space1,.space2{
+    display: flex;
+}
+.head-down-sub-container{
+    display: flex;
+}
+.head-down-center{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 1px 5px 0px rgb(213, 206, 206);
+    border: 1px solid rgb(235, 228, 228);
+    width: 56%;
+}
+.space1,.checkin,.checkout{
+    flex-grow:1 ;
+}
+.space2{
+    flex-grow:1 ;
+}
+.where,.who{
+    flex-grow:2 ;
+}
+.head-down-center button{
+    border-radius: 50px;
+    font-size: small;
+    font-weight: bold;
+    border-style:none;
+    padding: 20px;
+    background-color: white;
+}
+.s-discr{
+    font-weight: normal;
+    font-size: 17px;
+    color: rgb(167, 123, 123);
+    margin: 0;
+}
+.head-down-center button p,span{
+    display: flex;
+    margin-left: 30px;
+}
+.who{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    align-items: center;
+}
+.search{
+   height: 60px;
+   width: 60px;
+   margin-right: 10px;
+}
+.head-down-center>button:hover{
+    background-color:   rgb(245, 239, 239);
+}
+.head-down-center:hover div {
+    border-style: none;
+}
+.who:hover{
+    background-color:   rgb(245, 239, 239);
+}
+.s1{
+    background-color:red;
+}
+.vr-line{
+    border-left: 1px solid rgb(222, 212, 212);
+}
+
+/* Navbar search section end */
+
+/* Horizondal scroll section start */
+
+.head-bottem-container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 7%;
+    flex-grow: 2;
+}
+.icon-name{
+    height: 30px;
+}
+.scroll{
+    display: flex;
+    overflow-x: scroll;
+}
+.items{
+    height: 60px;
+    padding: 28px;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    color: rgb(144, 124, 124);
+}
+.more {
+    text-align: center;
+    height: 35px;
+    width: 43px;
+    border-radius: 25px;
+    border: 1px solid rgb(202, 196, 196);
+    margin-top: 30px;
+    padding-left: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 20px rgb(255, 255, 255);
+}
+.items div{
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 100px;
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.scroll-color{
+    color:rgb(144, 124, 124) ;
+}
+.items:hover p{
+    border-bottom:3px solid rgb(218, 208, 208) ;
+}
+.more:hover{
+    box-shadow: 1px 1px 10px 1px rgb(213, 206, 206);
+    height: 36px;
+    width: 44px;
+}
+
+/* Horizondal scroll section end*/
+
+
+/*body or middle section start*/
+
+.middle-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 310px;
+}
+.card{
+    width: 23%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.photo{
+    border-radius: 15px;
+    width: 100%;
+    height: 340px;
+}
+.content{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.content span{
+    margin-left:0 ;
+    margin-top: 5px;
+}
+.sub-c{
+    color: gray;
+}
+.card div{
+    border-radius: 20px;
+    width: 36px;
+    height: 35px;
+    background-color: rgb(209, 206, 206);
+    position: absolute;
+    margin: 15px;
+    right: 0;
+    text-align: center;
+}
+.card div img{
+    width: 15px;
+    height: 25px;
+    margin-top: 5px;
+}
+.card div:hover{
+    background-color: rgb(239, 233, 233);
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+}
+#live{
+    position: absolute;
+    padding-top: 10px;
+    left: 0;
+    height: 27px;
+    width: 70px;
+}
+#live:hover{
+    background-color: rgb(209, 206, 206) ;
+    box-shadow: none;
+}
+.card button{
+    display: inline;
+    position: absolute;
+    right: 0;
+    margin-top: 40%;
+    margin-right: 10px;
+    height: 37px;
+    width: 37px;
+    border-radius: 20px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+    z-index: -1;
+}
+.card:hover button{
+   z-index: 1;
+}
+
+/*body or middle section end*/
+
+/* Responsive section start */
+
+ @media screen and (max-width:1340px) {
+    .card{
+        width: 300px;
+    }
+    .photo{
+        height: 300px;
+    }
+    .head-down-center{
+        width: 75%;
+    }
+    .head-top-sub-container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .middle-section{
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .head-bottem-container{
+        margin-right: 5%;
+    }
+    .more{
+        height: 35px;
+        width: 50px;
+    }
+}
+@media screen and (max-width:1280px){
+    .card{
+        width: 350px;
+        height:400px ;
+    }
+    .photo{
+        height: 300px;
+    }
+    .head-down-center{
+        width: 90%;
+    }
+    .more{
+        height: 35px;
+        width: 60px;
+    }
+}
+@media screen and (max-width:1100px){
+    .card{
+        width: 320px;
+    }
+    .photo{
+        height: 300px;
+    }
+} 
+@media screen and (max-width:950px){
+    .card{
+        width: 400px;
+        height: 480px;
+    }
+    .photo{
+        height: 350px;
+    }
+    .more{
+        height: 35px;
+        width: 70px;
+    }
+} 
+@media screen and (max-width:840px){
+    .card{
+        width: 320px;
+        height: 400px;
+    }
+    .photo{
+        height: 300px;
+    }
+    .head-top-center button,.head-down-center,.home-net span,svg{
+       display: none;
+    }
+    .input-search{
+        display: block;
+        width: 300px;
+        height: 60px;
+        border-radius: 50px;
+        padding-left: 20px;
+        border-style: none;
+        box-shadow: 0px 1px 5px 0px rgb(213, 206, 206);
+        margin-left: 10px;
+    }
+    .input-search:focus{
+        outline: none;
+    }
+    .head-top-container,.head-container{
+        height: fit-content;
+    }
+    .middle-section{
+        padding-top: 220px;
+    }
+    .more{
+        height: 35px;
+        width: 70px;
+    }
+} 
+@media screen and (max-width:715px){
+    .card{
+        width: 280px;
+        height: 350px;
+    }
+    .photo{
+        height: 260px;
+    }
+    .head-top-sub-container .head-top-left{
+       display: none;
+    }
+    .more{
+        height: 35px;
+        width: 80px;
+    }
+}
+@media screen and (max-width:615px){
+    .card{
+        width: 90%;
+        height: 600px;
+    }
+    .photo{
+        height: 500px;
+    }
+    .more{
+        height: 35px;
+        width: 100px;
+    }
+}
+/* Responsive section end */
